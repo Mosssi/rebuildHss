@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "joinUs": "Join Us",
+    "departments": "Departments",
+    "aboutHSS": "About HSS",
+    "forMembers": "For Members",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "heroTitle": "Welcome to",
+    "heroSubtitle": "HÄSSELBY STRANDS SJÖSCOUTKÅR",
+    "heroDesc": "Adventure Awaits. No matter who you are or where you come from, there's an adventure waiting for you.",
+    "joinUs": "Join Us",
+    "becomeLeader": "Become a Leader",
+    "traditions": "Our Traditions",
+    "seeMore": "See More",
+    "memories": "Unforgettable Scout Memories!",
+    "memoriesDesc": "Hässelby Strands Sjöscoutkår (HSS) is a nonprofit youth organization with a proud tradition of scouting and life on the water.",
+    "partners": "Our Partners",
+    "readMore": "Read More"
+  },
+  "footer": {
+    "followUs": "Follow Us on Social Media",
+    "stayUpToDate": "Stay Up to Date",
+    "joinNow": "Join Now",
+    "rights": "All rights reserved."
+  }
+}

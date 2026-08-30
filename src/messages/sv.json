@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "joinUs": "Gå med",
+    "departments": "Avdelningar",
+    "aboutHSS": "Om HSS",
+    "forMembers": "För medlemmar",
+    "contact": "Kontakt",
+    "language": "Språk"
+  },
+  "home": {
+    "heroTitle": "Välkommen till",
+    "heroSubtitle": "HÄSSELBY STRANDS SJÖSCOUTKÅR",
+    "heroDesc": "Äventyr väntar. Oavsett vem du är eller varifrån du kommer, finns det ett äventyr som väntar på dig.",
+    "joinUs": "Gå med",
+    "becomeLeader": "Bli ledare",
+    "traditions": "Våra traditioner",
+    "seeMore": "Se mer",
+    "memories": "Oförglömliga scoutminnen!",
+    "memoriesDesc": "Hässelby Strands Sjöscoutkår (HSS) är en ideell ungdomsorganisation med en stolt tradition av scouting och liv på vattnet.",
+    "partners": "Våra partners",
+    "readMore": "Läs mer"
+  },
+  "footer": {
+    "followUs": "Följ oss på sociala medier",
+    "stayUpToDate": "Håll dig uppdaterad",
+    "joinNow": "Gå med nu",
+    "rights": "Alla rättigheter förbehållna."
+  }
+}

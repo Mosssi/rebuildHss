@@ -6,6 +6,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer"
 
 import { WaveDivider } from "@/components/layout/WaveDivider"
+import { LangProvider } from "@/context/LangContext";
+
 
 
 
@@ -33,19 +35,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${paytone.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink font-sans">
-        <Navbar />
-        <div className="flex-1">
-          {children}
-        </div>
-
-        <div className="relative bg-navy">
-          <WaveDivider 
-          fill="var(--color-paper)"
-          className="absolute inset-x-0 top-0 -translate-y-px" />
+        <LangProvider>
+          <Navbar />
+          <div className="flex-1">{children}</div>
+          
+          <div className="relative bg-navy">
+            <WaveDivider 
+            fill="var(--color-paper)"
+            className="absolute inset-x-0 top-0 -translate-y-px" />
           <Footer />
-
-        </div>      
-       
+        </div>         
+        </LangProvider>
+              
       </body>
     </html>
   );
