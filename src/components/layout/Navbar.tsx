@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { useLang } from "@/context/LangContext";
 
 const NAV_ITEMS = [
+  { labelKey: "Home", href: "/" },
   { labelKey: "nav.departments", href: "/departments" },
   { labelKey: "nav.aboutHSS", href: "/about", hasDropdown: true },
   { labelKey: "nav.forMembers", href: "/members", hasDropdown: true },
@@ -19,19 +21,16 @@ export function Navbar() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        {/* Logo → 首页 */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-xs font-bold text-white">
-            HSS
-          </div>
-          <span className="hidden font-display text-sm leading-tight text-white sm:block">
-            HÄSSELBY STRANDS
-            <br />
-            SJÖSCOUTKÅR
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logos/logo.svg"
+            alt="Hässelby Strands Sjöscoutkår"
+            width={220}
+            height={56}
+            priority
+          />
         </Link>
 
-        {/* 桌面导航 */}
         <div className="hidden items-center gap-7 lg:flex">
           {NAV_ITEMS.map((item) => (
             <Link
@@ -52,7 +51,6 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* 汉堡 */}
         <button
           onClick={() => setOpen(!open)}
           aria-label="Menu"

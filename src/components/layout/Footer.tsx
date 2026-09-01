@@ -1,25 +1,25 @@
 import Link from "next/link";
+import Image from "next/image"
 
 export function Footer() {
   return (
     <footer className="bg-navy px-6 pb-10 pt-32 text-white md:pt-48">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
-        {/* 左：双 logo */}
+        {/* left */}
         <div className="space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-xs font-bold">
-              HSS
-            </div>
-            <span className="font-display text-sm leading-tight">
-              HÄSSELBY STRANDS
-              <br />
-              SJÖSCOUTKÅR
-            </span>
-          </div>
-          <div className="font-display text-2xl italic">Scouterna</div>
-        </div>
-
-        {/* 中：联系方式 + 社交 */}
+           <Image
+          src="/logos/logo.svg"
+          alt="Hässelby Strands Sjöscoutkår"
+          width={200}
+          height={50}
+          />
+  <Image
+    src="/logos/scouterna.svg"
+    alt="Scouterna"
+    width={160}
+    height={40}
+  />
+  </div>     
         <div className="space-y-2">
           <h3 className="font-display text-lg">Hässelby Strands Sjöscoutkår</h3>
           <p className="text-sm">
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* 右：标语 */}
+
         <div className="space-y-3">
           <h3 className="font-display text-lg">Adventure &amp; Friendship</h3>
           <p className="text-sm leading-relaxed">
@@ -53,6 +53,7 @@ export function Footer() {
             Join Now
           </Link>
         </div>
+
       </div>
 
       <p className="mt-12 text-center text-sm">
