@@ -2,7 +2,9 @@ import { getRequestConfig } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "./i18n/routing";
 
-export default getRequestConfig(async ({ locale }) => {
+export default getRequestConfig(async ({ requestLocale }) => {
+  const locale = await requestLocale;
+
   if (!locale || !routing.locales.includes(locale as any)) {
     notFound();
   }
